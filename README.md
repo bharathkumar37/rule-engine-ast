@@ -1,15 +1,17 @@
-Rule Engine with AST
+###Rule Engine with AST
 This project is a simple rule engine implemented using an Abstract Syntax Tree (AST) to evaluate user eligibility based on attributes like age, department, income, and experience. The rule engine dynamically creates, combines, and evaluates rules.
 
-Features
+##Features:
 AST-based rule representation.
 Dynamic rule creation, modification, and combination.
 Evaluation of rules against user data.
 Error handling and validation of rules.
-Prerequisites
+
+##Prerequisites
 Python 3.x installed on your system.
 Git installed on your system (optional if you want to clone from GitHub).
-Installation
+
+###Installation
 Step 1: Clone the repository
 If you haven't already, clone the repository to your local machine:
 
@@ -96,16 +98,22 @@ Some sample rules that can be created and evaluated:
 
 rule1 = "((age > 30 AND department = 'Sales') OR (age < 25 AND department = 'Marketing')) AND (salary > 50000 OR experience > 5)"
 rule2 = "((age > 30 AND department = 'Marketing')) AND (salary > 20000 OR experience > 5)"
-How the Rule Engine Works
+
+
+##How the Rule Engine Works:
+
 Abstract Syntax Tree (AST): The rule engine uses an AST to represent rules. This allows for easy manipulation, evaluation, and combination of rules.
 Creating Rules: The create_rule function takes a rule string as input and converts it into an AST.
 Combining Rules: The combine_rules function takes multiple ASTs and combines them into a single AST.
 Evaluating Rules: The evaluate_rule function takes a JSON representation of the AST and user data as input, and returns True or False based on whether the user satisfies the rule.
-Error Handling
+
+##Error Handling:
 The system includes error handling for invalid rule strings and invalid user data.
 Invalid comparisons or missing operators will raise a ValueError.
 Advanced Features (Bonus)
 Support for modifying existing rules using functions that allow changing operators, operand values, or sub-expressions.
 Support for user-defined functions in rule expressions (for advanced users).
-License
+
+
+##License:
 This project is licensed under the MIT License.
